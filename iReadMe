@@ -1,0 +1,157 @@
+----------Movie controller------
+
+http://localhost:8081/addMovie
+
+{
+
+	"movieName" : "RRR",
+	"movieGenre" : "Fantasy",
+	"movieHours" : "03:00",
+	"language" : "telugu",
+	"description" : "rajamouli film"
+}
+
+
+http://localhost:8081/viewMovieList
+
+http://localhost:8081/movieByTheatreId/1
+
+
+
+
+----------Theatre controller------
+
+http://localhost:8081/addTheatre
+
+{
+
+	"theatreName" : "Venkateswara",
+	"theatreCity" : "Razole",
+	"listOfScreens" : [{
+        "screenName":"A",
+        "rowCount":"5",
+        "columnCount":"5"
+    }],
+	"managerName" : "Gopal",
+	"managerContact" : "9553307417"
+}
+---------show controller-------
+http://localhost:8081/addShow
+
+{
+	"showStartTime" : "2012-04-23T18:25:43.511Z",
+	"showEndTime" : "2012-04-23T18:25:43.511Z",
+	"showName" : "Morning Show",
+	"movieId" : "1",
+	"screenId" : "5",
+	"theatreId" : "4"
+}
+
+http://localhost:8081/updateShow
+
+{
+    "showId": 1,
+    "showStartTime": "2012-04-23T18:25:43.511",
+    "showEndTime": "2012-04-23T18:25:43.511",
+    "showName": "Evening Show",
+    "movieId": 1,
+    "screenId": 5,
+    "theatreId": 1
+}
+http://localhost:8081/removeShow/2
+
+http://localhost:8081/showById/1
+
+http://localhost:8081/showBytheatreId/1
+
+http://localhost:8081/viewAllShows
+
+
+
+-------ticket management-----------
+http://localhost:8081/addBooking
+
+{
+    "showId":"1",
+    "bookingDate":"2012-04-23T18:25:43.511Z",
+    "transcationId":"1",
+    "transcationMode":"cash",
+    "transcationStatus":"Sucess",
+    "totalCost":"200",
+    "ticket":{
+        "noOfSeats":"1",
+        "seatNumber":[{
+            "seatNumber":"2",
+            "type":"gold",
+            "price":"200"
+        }],
+        "ticketStatus":"true"
+    }
+ 
+}
+
+http://localhost:8081/updateBooking
+
+{
+    "bookingId": 1,
+    "showId": 1,
+    "bookingDate": "2012-04-23",
+    "transcationId": 1,
+    "transcationMode": "cash",
+    "transcationStatus": "Sucess",
+    "totalCost": 200.0,
+    "ticket": {
+        "ticketId": 1,
+        "noOfSeats": 1,
+        "seatNumber": [
+            {
+                "seatId": 1,
+                "seatNumber": "2",
+                "type": "gold",
+                "price": 200.0
+            }
+        ],
+        "bookingRef": null,
+        "ticketStatus": true
+    }
+}
+
+http://localhost:8081/cancelBooking/1
+
+http://localhost:8081/bookingByMovieId/1
+
+http://localhost:8081/bookingByShowId/2
+
+http://localhost:8081/calculateTotalCost/2
+
+------------customer controller--------
+
+http://localhost:8081/addCustomer
+
+{
+    "customerName" : "Tanuj",
+    "address" : "Razole",
+    "mobileNumber" : "9515699360",
+    "email":"tanuj.b2017@gmail.com",
+    "password":"admin"
+ 
+}
+http://localhost:8081/update
+ 
+{
+    "userId": 2,
+    "customerName": "Tanuj",
+    "address": "Razole",
+    "mobileNumber": "9515699699",
+    "email": "tanuj.b2017@gmail.com",
+    "password": "admin",
+    "booking": null
+}
+ 
+http://localhost:8081/deleteCustomer/2
+ 
+http://localhost:8081/viewbyId/1
+ 
+http://localhost:8081/viewbyMovieId/1
+ 
+
