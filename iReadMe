@@ -1,6 +1,6 @@
 
 Post
-http://localhost:8081/addMovie
+http://localhost:8080/addMovie
 
 {
 
@@ -12,14 +12,14 @@ http://localhost:8081/addMovie
 }
 
 Get
-http://localhost:8081/viewMovieList
+http://localhost:8080/viewMovieList
 
 Get
-http://localhost:8081/movieByTheatreId/1
+http://localhost:8080/movieByTheatreId/1
 
 
 Post
-http://localhost:8081/addTheatre
+http://localhost:8080/addTheatre
 
 {
 
@@ -35,7 +35,7 @@ http://localhost:8081/addTheatre
 }
 
 Post
-http://localhost:8081/addShow
+http://localhost:8080/addShow
 
 {
 	"showStartTime" : "2012-04-23T18:25:43.511Z",
@@ -48,7 +48,7 @@ http://localhost:8081/addShow
 
 
 Post
-http://localhost:8081/updateShow
+http://localhost:8080/updateShow
 
 {
     "showId": 1,
@@ -61,20 +61,20 @@ http://localhost:8081/updateShow
 }
 
 Delete
-http://localhost:8081/removeShow/2
+http://localhost:8080/removeShow/2
 
 Get
-http://localhost:8081/showById/1
+http://localhost:8080/showById/1
 
 Get
-http://localhost:8081/showBytheatreId/1
+http://localhost:8080/showBytheatreId/1
 
 Get
-http://localhost:8081/viewAllShows
+http://localhost:8080/viewAllShows
 
 
 Post
-http://localhost:8081/addBooking
+http://localhost:8080/addBooking
 
 {
     "showId":"1",
@@ -97,7 +97,7 @@ http://localhost:8081/addBooking
 
 
 Post
-http://localhost:8081/updateBooking
+http://localhost:8080/updateBooking
 
 {
     "bookingId": 1,
@@ -124,25 +124,25 @@ http://localhost:8081/updateBooking
 }
 
 Delete
-http://localhost:8081/cancelBooking/1
+http://localhost:8080/cancelBooking/1
 
 Get
-http://localhost:8081/bookingByMovieId/1
+http://localhost:8080/bookingByMovieId/1
 
 Get
-http://localhost:8081/bookingByShowId/2
+http://localhost:8080/bookingByShowId/2
 
 Get
-http://localhost:8081/calculateTotalCost/2
+http://localhost:8080/calculateTotalCost/2
 
 Post
-http://localhost:8081/bookingByDate
+http://localhost:8080/bookingByDate
 {
 	
 	"bookingDate": "2012-04-23T18:25:43.511Z"
 }
 Post
-http://localhost:8081/addCustomer
+http://localhost:8080/addCustomer
 
 {
     "customerName" : "Tanuj",
@@ -154,7 +154,7 @@ http://localhost:8081/addCustomer
 }
 
 Post
-http://localhost:8081/update
+http://localhost:8080/update
  
 {
     "userId": 2,
@@ -167,19 +167,19 @@ http://localhost:8081/update
 }
  
 Delete
-http://localhost:8081/deleteCustomer/2
+http://localhost:8080/deleteCustomer/2
 
 Get 
-http://localhost:8081/viewbyId/1
+http://localhost:8080/viewbyId/1
 
 
 Get
 
-http://localhost:8081/viewbyMovieId/1
+http://localhost:8080/viewbyMovieId/1
 
 post
 
-http://localhost:8081/addUser
+http://localhost:8080/addUser
 {
     "userId":"1",
     "password":"tanuj",
@@ -187,7 +187,7 @@ http://localhost:8081/addUser
   
 }
 Post
-http://localhost:8081/addAdmin
+http://localhost:8080/addAdmin
 
 {
     "adminName":"AAkansha",
