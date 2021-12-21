@@ -14,13 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.capg.mtb.exceptions.BookingNotFoundException;
 import com.capg.mtb.model.Booking;
 import com.capg.mtb.service.IBookingService;
-
+//it is responsible for rest api requests
 @RestController                 // It will take care of http protocal and requests from browser
-public class BookingController {
+public class BookingController {  //
 
 	@Autowired                  //	Autowiring feature of spring framework enables you to inject the object dependency
 	IBookingService iBookingService;
-
+	
+     //@ResponseBody annotations are used to bind the HTTP request/response body with a domain object in method parameter 
 	@PostMapping("/addBooking") // Booking Ticket
 	public ResponseEntity<Booking> addBooking(@RequestBody Booking booking) throws Exception {
 		return ResponseEntity.ok(iBookingService.addBooking(booking));
@@ -32,7 +33,7 @@ public class BookingController {
 		return iBookingService.updateBooking(booking);
 	}
 	
-
+    //@PathVariable is a Spring annotation which indicates that a method parameter should be bound to a URI template variable
 	@DeleteMapping("/cancelBooking/{id}") //cancel Tcieket
 	public String cancelBooking(@PathVariable("id") int id) throws BookingNotFoundException {
 		iBookingService.cancelBooking(id);

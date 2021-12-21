@@ -16,7 +16,7 @@ public class Show {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)	//Instructs database to generate a value for this field automatically.
-	private int showId;
+	private int showId; //These are the Attributes added here according to the bussiness requirement
 
 	private LocalDateTime showStartTime;
 

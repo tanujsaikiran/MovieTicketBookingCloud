@@ -12,6 +12,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 //The @Entity annotation specifies that the class is an entity and is mapped to a database table
 //The @Table annotation specifies the name of the database table to be used for mapping
+//An entity class is essentially an object wrapper for a database table. 
+//The attributes of an entity are transformed to columns on the database table
 @Entity
 @Table(name = "Bookings")
 public class Booking {

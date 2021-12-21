@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.capg.mtb.model.Booking;
 
+//repositories are clas that encapsulate the logic required yo aceess data source
 public interface IBookingRepository extends JpaRepository<Booking, Integer>{
 	public List<Booking> findByShowId(int showid);
 	

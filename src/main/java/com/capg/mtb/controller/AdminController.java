@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.capg.mtb.model.Admin;
 import com.capg.mtb.service.IAdminService;
-@RestController
+@RestController// It will take care of http protocal and requests from browser
 public class AdminController {
 	@Autowired
 	private IAdminService iAdminService;

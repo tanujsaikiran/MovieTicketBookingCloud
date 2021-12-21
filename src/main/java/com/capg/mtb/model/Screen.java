@@ -18,12 +18,11 @@ public class Screen {
 	private int screenId;
 	
 	private String screenName;
-	
-//	@ManyToOne(cascade = CascadeType.ALL)
-	@Transient //@Transient annotation in JPA or Hibernate is used to indicate that a field is not to be persisted or ignore fields to save in the database
-	
+
 	private int rowCount;
 	private int columnCount;
+	
+	
 	public int getScreenId() {
 		return screenId;
 	}

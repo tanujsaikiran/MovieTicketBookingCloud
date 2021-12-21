@@ -15,7 +15,8 @@ import com.capg.mtb.repository.ICustomerRepository;
 import com.capg.mtb.repository.IShowRepository;
 import com.capg.mtb.service.IBookingService;
 
-@Component
+@Component //It means that Spring framework will autodetect these classes for dependency injection when annotation-based 
+           // configuration and classpath scanning is used.
 public class IBookingServiceImpl implements IBookingService {
 
 	@Autowired          //	Autowiring feature of spring framework enables you to inject the object dependency

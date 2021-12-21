@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 import com.capg.mtb.model.Show;
 
 public interface IShowRepository extends JpaRepository<Show, Integer> {
-	
+	//custom query
 	@Query(value = "select movie_Id from Shows s where show_Start_Time = 1", nativeQuery = true)
 	List<Integer> findByDate(LocalDate date);
 

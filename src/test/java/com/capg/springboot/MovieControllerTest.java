@@ -12,7 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
-import com.capg.mtb.application.MovieTicketBookingApplication;
+import com.capg.mtb.MovieTicketBookingApplication;
 import com.capg.mtb.model.Movie;
 import com.capg.mtb.repository.IMovieRepository;
 import com.capg.mtb.service.impl.IMovieServiceImpl;

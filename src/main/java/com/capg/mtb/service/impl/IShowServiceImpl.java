@@ -37,7 +37,7 @@ public class IShowServiceImpl implements IShowService {
 		} else {
 			
 			Theatre theatre = iTheatreRepository.getById(show.getTheatreId());
-			// if there is no theatre with given 
+			// if there is no theatre with given  theatre id it will throw MovieNotFoundException
 			if(theatre==null) {
 				throw new MovieNotFoundException("No theatre id is found:" + show.getTheatreId());
 			}

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: movieticketbooking-postgres
+  name: movieticketbooking-postgres
+spec:
+  ports:
+    - name: movieticketbooking-postgres
+      port: 8080
+      protocol: TCP
+  selector:
+    app: movieticketbooking-postgres
+  type: LoadBalancer
